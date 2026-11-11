@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation_utama">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_utama"
+    android:label="HOME"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/detailProfileFragment"
+        android:name="com.example.navigation.DetailProfileFragment"
+        android:label="fragment_detail_profile" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigation.HomeFragment"
+        android:label="home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.navigation.ProfileFragment"
+        android:label="profile" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.navigation.SettingFragment"
+        android:label="setting" />
 </navigation>
